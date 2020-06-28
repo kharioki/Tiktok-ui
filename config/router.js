@@ -17,7 +17,7 @@ export default Tabs = () => (
       options={{
         tabBarLabel: 'Home',
         tabBarIcon: ({focused}) => (
-          <Icon name="ios-home" color={focused ? white : gray} size={22} />
+          <Icon name="ios-home" color={focused ? '#fff' : '#666'} size={22} />
         ),
       }}
     />
@@ -27,7 +27,11 @@ export default Tabs = () => (
       options={{
         tabBarLabel: 'Discover',
         tabBarIcon: ({focused}) => (
-          <Icon name="ios-compass" color={focused ? white : gray} size={22} />
+          <Icon
+            name="ios-compass"
+            color={focused ? '#fff' : '#666'}
+            size={22}
+          />
         ),
       }}
     />
@@ -37,7 +41,7 @@ export default Tabs = () => (
       options={{
         tabBarLabel: 'Add',
         tabBarIcon: ({focused}) => (
-          <Icon name="ios-add" color={focused ? white : gray} size={22} />
+          <Icon name="ios-add" color={focused ? '#fff' : '#666'} size={22} />
         ),
       }}
     />
@@ -47,7 +51,7 @@ export default Tabs = () => (
       options={{
         tabBarLabel: 'Inbox',
         tabBarIcon: ({focused}) => (
-          <Icon name="ios-mail" color={focused ? white : gray} size={22} />
+          <Icon name="ios-mail" color={focused ? '#fff' : '#666'} size={22} />
         ),
       }}
     />
@@ -57,7 +61,7 @@ export default Tabs = () => (
       options={{
         tabBarLabel: 'Me',
         tabBarIcon: ({focused}) => (
-          <Icon name="ios-person" color={focused ? white : gray} size={22} />
+          <Icon name="ios-person" color={focused ? '#fff' : '#666'} size={22} />
         ),
       }}
     />
