@@ -27,6 +27,20 @@ const VideoData = props => {
             <Text style={styles.description} numberOfLines={4}>
               {props.item.description}
             </Text>
+            <Text style={{color: '#fff', fontWeight: 'bold', marginBottom: 15}}>
+              #Avengers #Javascript #ReactNative
+            </Text>
+            <View style={styles.music}>
+              <Icon
+                name="md-musical-note"
+                size={15}
+                color="#fff"
+                style={{marginRight: 15}}
+              />
+              <Text style={{color: '#fff'}}>
+                What do you mean - Justin Beiber
+              </Text>
+            </View>
           </View>
         </View>
 
@@ -196,5 +210,9 @@ const styles = StyleSheet.create({
   },
   description: {
     color: '#e5e5e5',
+  },
+  music: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });
