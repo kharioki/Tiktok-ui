@@ -10,7 +10,14 @@ const Tab = createBottomTabNavigator();
 Icon.loadFont();
 
 export default Tabs = () => (
-  <Tab.Navigator initialRouteName="Home" activeColor="#fff">
+  <Tab.Navigator
+    initialRouteName="Home"
+    activeColor="#fff"
+    tabBarOptions={{
+      activeBackgroundColor: '#000',
+      inactiveBackgroundColor: '#000',
+      activeTintColor: '#fff',
+    }}>
     <Tab.Screen
       name="Home"
       component={Home}
